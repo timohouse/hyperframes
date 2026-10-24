@@ -34,7 +34,7 @@
 # Debian bookworm-slim because the chrome-headless-shell dynamic-library set
 # matches what we use in CI. Amazon Linux 2023 also works (Lambda's base
 # image) but is harder to debug locally.
-FROM node:22-bookworm-slim AS base
+FROM node:22.23.4-bookworm-slim AS base
 
 # ── System deps ──────────────────────────────────────────────────────────────
 # - libfontconfig / libfreetype / fonts-*: Chrome text shaping, the font set
